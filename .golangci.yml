@@ -1,0 +1,30 @@
+run:
+  build-tags:
+    - integration
+    - unit
+    - acceptance
+
+linters-settings:
+  goimports:
+    # Separate handlers packages from external
+    local-prefixes: github.com/quii/go-http-reference-impl
+
+linters:
+  # Enable extra linters besides the default ones
+  enable:
+    - goimports
+    - godot
+    - goconst
+    - bodyclose
+    - gochecknoglobals
+    - gofmt
+    - gofumpt
+    - govet
+    - stylecheck
+    - unconvert
+    - unparam
+    - misspell
+    - whitespace
+    - bodyclose
+    - gocritic
+    - testpackage

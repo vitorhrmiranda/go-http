@@ -1,0 +1,3 @@
+#!/bin/bash -e
+
+go test -shuffle=on --tags=unit ./...
